@@ -14,7 +14,6 @@
   <th>Project Owner: Avinh Huynh</th>
  
   <td>Phone number: 619 888 7408</td>
-  </tr>
   <td>Email: avinhahuynh@gmail.com</td>
   </tr>
   </table>
