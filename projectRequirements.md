@@ -8,16 +8,14 @@
 - Sassy Navbar
 
 ### Contact Info
-Project Owner: Avinh Huynh
-Phone number: 619 888 7408
-Email: avinhahuynh@gmail.com
+
 <table>
   <tr>
-  <th>Week Number</th>
+  <th>Project Owner: Avinh Huynh</th>
   </tr>
-  <td>Week 0: Plans, Team, Jobs</td>
+  <td>Phone number: 619 888 7408</td>
   </tr>
   </tr>
-  <td>Week 0: Plans, Team, Jobs</td>
+  <td>Email: avinhahuynh@gmail.com</td>
   </tr>
   </table>
