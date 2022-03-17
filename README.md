@@ -1,5 +1,7 @@
 # jinjaturtles
 
+[GitHub Pages](https://slimeyturtles.github.io/jinjaturtles/)
+
 |Name|GitHub Profile|Issues|Journals|Commits|
 |--------|---------|-------|-------|-------|
 |Yolanda Yang|@yolandayangg|[Issues](https://github.com/SlimeyTurtles/jinjaturtles/issues/assigned/yolandayangg)|[Individual Repo](https://github.com/yolandayangg/yolandayang)|[Commits](https://github.com/SlimeyTurtles/jinjaturtles/commits?author=yolandayangg)|
