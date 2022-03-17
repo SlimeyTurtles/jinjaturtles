@@ -10,11 +10,10 @@
 ### Contact Info
 
 <table>
-  <tr>
+
   <th>Project Owner: Avinh Huynh</th>
-  </tr>
+ 
   <td>Phone number: 619 888 7408</td>
-  </tr>
   </tr>
   <td>Email: avinhahuynh@gmail.com</td>
   </tr>
