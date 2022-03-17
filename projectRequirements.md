@@ -6,3 +6,8 @@
 - Recipes on things cooked during the club
 - Sign up/newsletter
 - Sassy Navbar
+
+### Contact Info
+Project Owner: Avinh Huynh
+Phone number: 619 888 7408
+Email: avinhahuynh@gmail.com
