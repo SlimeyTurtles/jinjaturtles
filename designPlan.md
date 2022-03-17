@@ -1,4 +1,4 @@
-
+{% include navigation.html %}
 
 ## Project Design Plan
 This website is dedicated to the spectacular "Cooking Club!"
