@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+### Jinja Turtles
 
-You can use the [editor on GitHub](https://github.com/SlimeyTurtles/jinjaturtles/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+|Name|GitHub Profile|Issues|Journals|Commits|
+|--------|---------|-------|-------|-------|
+|Yolanda Yang|@yolandayangg|[Issues](https://github.com/SlimeyTurtles/jinjaturtles/issues/assigned/yolandayangg)|[Individual Repo](https://github.com/yolandayangg/yolandayang)|[Commits](https://github.com/SlimeyTurtles/jinjaturtles/commits?author=yolandayangg)|
+|Natalie Cohen|@nataliecohen|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Anataliecohen)|[Individual Repo](https://github.com/nataliecohen/nataliecohen.github.io)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=nataliecohen)
+|Avinh Huynh|@SlimeyTurtles|[Issues](https://github.com/SlimeyTurtles/jinjaturtles/issues/assigned/SlimeyTurtles)|[Individual Repo](https://github.com/SlimeyTurtles/jinjaturtles)|[Commits](https://github.com/SlimeyTurtles/jinjaturtles/commits?author=SlimeyTurtles)|
+|Calissa Tyrrell|@CalissaT|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ashrutiapcsp)|[Individual Repo](https://github.com/CalissaT/CalissaTri3Repo)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=shrutiapcsp)|
+|Paige McCartin|@paigemccartin|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ayolandayangg)|[Individual Repo](https://github.com/paigemccartin/paigemccartin.github.io)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=yolandayangg)|
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Sponsor
 
-### Markdown
+# Timebox
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Week 1
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SlimeyTurtles/jinjaturtles/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Week 0
