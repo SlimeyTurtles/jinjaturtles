@@ -17,4 +17,7 @@ Email: avinhahuynh@gmail.com
   </tr>
   <td>Week 0: Plans, Team, Jobs</td>
   </tr>
+  </tr>
+  <td>Week 0: Plans, Team, Jobs</td>
+  </tr>
   </table>
