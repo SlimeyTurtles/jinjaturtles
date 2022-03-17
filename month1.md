@@ -1,3 +1,5 @@
+{% include navigation.html %}
+
 ## Week 1 Project Goals
 
 | Name | Work In Progress | Status| Commit |
