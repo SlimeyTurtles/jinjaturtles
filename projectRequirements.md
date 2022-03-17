@@ -11,3 +11,10 @@
 Project Owner: Avinh Huynh
 Phone number: 619 888 7408
 Email: avinhahuynh@gmail.com
+<table>
+  <tr>
+  <th>Week Number</th>
+  </tr>
+  <td>Week 0: Plans, Team, Jobs</td>
+  </tr>
+  </table>
