@@ -8,10 +8,8 @@
 |Calissa Tyrrell|@CalissaT|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ashrutiapcsp)|[Individual Repo](https://github.com/CalissaT/CalissaTri3Repo)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=shrutiapcsp)|
 |Paige McCartin|@paigemccartin|[Issues](https://github.com/yolandayangg/n224p4-beans/issues?q=is%3Aopen+is%3Aissue+author%3Ashrutiapcsp+assignee%3Ayolandayangg)|[Individual Repo](https://github.com/paigemccartin/paigemccartin.github.io)|[Commits](https://github.com/yolandayangg/n224p4-beans/commits?author=yolandayangg)|
 
-### Sponsor
+Sponsor
 
-# Timebox
-
-## Week 1
-
-## Week 0
+Timebox
+Week 1
+Week 0
