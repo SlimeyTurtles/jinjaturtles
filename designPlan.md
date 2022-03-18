@@ -7,7 +7,8 @@ We wanted to make an easy to use interface that included recipes created by the 
 
 There will be several main features:
 - A contact page for people interested in the club
-- A recipe catalog 
+- A recipe catalog (being able to add recipies, search for recipies)
+- Review recipies or comment (kind of like Yelp reviews)
 
 Wire Frame: (simple outline) 
 <img width="862" alt="Screen Shot 2022-03-10 at 11 33 50 PM" src="https://user-images.githubusercontent.com/89223547/157906134-67e792c0-6edb-4dba-8d40-2f461e6a07c0.png">
