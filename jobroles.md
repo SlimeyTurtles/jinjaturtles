@@ -1,4 +1,6 @@
 
+{% include navigation.html %}
+
 
 | Yolanda | Avinh | Paige | Calissa | Natalie |
 | ----- | ----- | -----| ------| ------|
