@@ -15,5 +15,6 @@ We decided to use a MIT license, an open source license, because its commonly us
 ### Webpage Mock Ups
 
 ### Key Workflow
+![Screen Shot 2022-03-24 at 5 47 27 PM](https://user-images.githubusercontent.com/89223526/160033237-fc5afbab-d2e9-43ca-9518-97072889c7e9.png)
 
 ### Data and Data Privacy
