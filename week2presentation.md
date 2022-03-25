@@ -13,6 +13,9 @@ Our sponser is the founder of the Cooking Club and fellow member of AP Computer 
 ### GitHub License
 We decided to use a MIT license, an open source license, because its commonly used and we are not necessarily trying to conceal the code from people
 
+<img width="793" src="https://github.com/SlimeyTurtles/jinjaturtles/blob/main/static/Screen%20Shot%202022-03-25%20at%2011.42.18%20AM.png?raw=true">
+<img width="793" src="https://github.com/SlimeyTurtles/jinjaturtles/blob/main/static/Screen%20Shot%202022-03-25%20at%2011.42.33%20AM.png?raw=true">
+
 ### Webpage Mock Ups
 [Canva Link](https://www.canva.com/design/DAE76tcRxi8/zoTKJg0afAEGd1L8DqCZAw/edit
 utm_content=DAE76tcRxi8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
