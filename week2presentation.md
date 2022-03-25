@@ -14,10 +14,10 @@ Our sponser is the founder of the Cooking Club and fellow member of AP Computer 
 We decided to use a MIT license, an open source license, because its commonly used and we are not necessarily trying to conceal the code from people
 
 ### Webpage Mock Ups
-![Uploading Screen Shot 2022-03-24 at 9.38.59 PM.png…]()
+<img width="793" alt="Screen Shot 2022-03-24 at 9 38 59 PM" src="https://user-images.githubusercontent.com/89223547/160055852-d455c243-8e18-43ab-b69e-042112471b92.png">
 <img width="791" alt="Screen Shot 2022-03-24 at 9 39 06 PM" src="https://user-images.githubusercontent.com/89223547/160055449-b6cfd818-7b2d-47f0-bd8f-8aa37a56113c.png">
 <img width="808" alt="Screen Shot 2022-03-24 at 9 39 11 PM" src="https://user-images.githubusercontent.com/89223547/160055457-6c6f508b-305a-4019-b55b-3fe553e6b306.png">
-![Uploading Screen Shot 2022-03-24 at 9.39.17 PM.png…]()
+<img width="787" alt="Screen Shot 2022-03-24 at 9 39 17 PM" src="https://user-images.githubusercontent.com/89223547/160055865-6d328da6-c395-491c-9ebe-10bc0394508a.png">
 <img width="784" alt="Screen Shot 2022-03-24 at 9 39 23 PM" src="https://user-images.githubusercontent.com/89223547/160055470-1be9a04c-46d1-4af2-b5d5-c9633c60d4b9.png">
 
 
@@ -25,3 +25,4 @@ We decided to use a MIT license, an open source license, because its commonly us
 ![Screen Shot 2022-03-24 at 5 47 27 PM](https://user-images.githubusercontent.com/89223526/160033237-fc5afbab-d2e9-43ca-9518-97072889c7e9.png)
 
 ### Data and Data Privacy
+
