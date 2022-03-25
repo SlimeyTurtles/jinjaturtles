@@ -29,3 +29,7 @@ utm_content=DAE76tcRxi8&utm_campaign=designshare&utm_medium=link2&utm_source=sha
 ### Data and Data Privacy
 
 We will need to encrypt our database that takes signup information of names and emails. SQL has a data encryption feature that uses a Service master key and a Database master key for its public key encryption. I don't know how the Service master key and Database master key interact, but I know how public key encryption works and I assume it is the same. The public key tells the source of the information how to encrypt the data, and the private key is where the destination decrypts the information.
+
+![image](https://user-images.githubusercontent.com/43688346/160180893-e5cdbede-79cb-4396-9ebc-66626584f206.png)
+
+![image](https://user-images.githubusercontent.com/43688346/160180951-edd6f8d2-d5fa-4d6c-8020-c12a7d2285df.png)
