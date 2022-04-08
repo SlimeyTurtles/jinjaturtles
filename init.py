@@ -1,7 +1,10 @@
-from flask import render_template, Flask
-from flask_login import LoginManager
+# __init__.py
+from flask import Flask
 
+# Setup of key Flask object (app)
 app = Flask(__name__)
+
+from flask_login import LoginManager
 
 # The most important part of an application that uses Flask-Login is the LoginManager class.
 # You should create one for your application like this:
@@ -13,10 +16,3 @@ login_manager = LoginManager()
 # Once the actual application object has been created, you can configure it for login with:
 
 login_manager.init_app(app)
-
-@app.route('/')
-def index():
-    return render_template("index.html")
-
-if __name__ == "__main__":
-    app.run(debug=True)
