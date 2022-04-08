@@ -1,12 +1,98 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 <!-- Navigation Bar from bootstrap
 This HTML is setup as a fragment allowing it to be "included" by other HTML files via Jinja2
 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand">{{basename}}</a>
+    <a class="navbar-brand" href="{{ url_for('index') }}">DELP</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-nav">
-        <!--url_for is a Jinja2 pre-processor that finds route from function name (def)-->
-        <a class="nav-link" href={{ url_for('index') }}>Home</a>
-        <a class="nav-link" href={{ url_for('signup') }}>Sign Up</a>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
+            <a class="nav-link" href={{ url_for('index') }}>Home</a>
+            <a class="nav-link" href={{ url_for('index') }}>Blank</a>
+            <a class="nav-link" href={{ url_for('index') }}>Blank</a>
+            <a class="nav-link" href={{ url_for('index') }}>Blank</a>
+            <a class="nav-link" href={{ url_for('index') }}>Blank</a>
+            <a class="nav-link" href={{ url_for('index') }}>Blank</a>
+            <a class="nav-link" href={{ url_for('index') }}>Blank</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    About Us
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href={{ url_for('index') }}>Blank</a>
+                </div>
+            </li>
+            <!-- stub is shown using the name of the route -->
+            <a class="nav-link" href="/stub">Stub</a>
+            <div class="btn-group">
+                <!-- Search Box -->
+                <div class="px-3">
+                    <input id="search" type="search" placeholder="Search" aria-label="Search">
+                </div>
+                <!-- Clock display -->
+                <div class="px-3 text-dark">
+                    <span id="clock"></span>
+                </div>
+            </div>
+
+            {% block navbar_script %}
+            <!-- Navigation bar JavaScript support -->
+            <script>
+                // Search Bar Control
+                // open google search window
+                const search = document.getElementById('search');
+                const google = 'https://www.google.com/search?q=site%3A+';
+                const site = 'https://delp.rocks';
+
+                function submitted(event) {
+                    if (event.key === 'Enter') {
+                        // calculations to determine new window size at 66% of existing
+                        const reduction = 0.66;  // reduce by 66%
+                        const w = Math.trunc(window.innerWidth*reduction);
+                        const h = Math.trunc(window.outerHeight*reduction);
+                        const l = Math.trunc(window.top.screenX + ((window.innerWidth - w)/2));
+                        const t = Math.trunc(window.top.screenY + ((window.outerHeight - h)/2));
+                        const left = "left=" + l;
+                        const top = "top=" + t;
+                        const width = "width=" + w;
+                        const height = "height=" + h;
+                        const location = left + ", " + top + ", " + width + ", " + height
+
+                        // setup and display window
+                        event.preventDefault();
+                        const url = google
+                            + site
+                            + '+'
+                            + search.value;
+                        const win = window.open(url, "CompSci Principles Search", location);
+                        win.focus();
+                    }
+                }
+                search.addEventListener('keypress', submitted);
+
+                // Clock Control
+                // clockElement global element set for convenience
+                let clockElement = document.getElementById('clock')
+                // Execute clock function on load
+                clock();
+                // Clock update executes on each interval set by timer
+                function clock() {
+                    let date = new Date();
+                    clockElement.textContent = date.toLocaleString();
+                }
+                // Clock refresh timer, a reoccurring event
+                setInterval(clock, 1000);
+                // End Clock Control
+            </script>
+            {% endblock %}
+
+        </div>
+    </div>
+</nav>
