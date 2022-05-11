@@ -11,6 +11,8 @@ There will be several main features:
 - Review recipies or comment (kind of like Yelp reviews)
 
 Wire Frame: (simple outline) 
-<img width="862" alt="Screen Shot 2022-03-10 at 11 33 50 PM" src="https://user-images.githubusercontent.com/89223547/157906134-67e792c0-6edb-4dba-8d40-2f461e6a07c0.png">
-<img width="866" alt="Screen Shot 2022-03-10 at 11 36 59 PM" src="https://user-images.githubusercontent.com/89223547/157906150-bdcf1504-c812-4cae-9877-593fc3457640.png">
-<img width="887" alt="Screen Shot 2022-03-10 at 11 41 28 PM" src="https://user-images.githubusercontent.com/89223547/157906155-9b1ee02f-1b85-4adf-83ba-1ad33b7b01d9.png">
+<img width="590" alt="Screen Shot 2022-05-11 at 11 18 13 AM" src="https://user-images.githubusercontent.com/89223547/167919023-ce20cf1a-ae28-4240-a540-df5f2e9cf42c.png">
+<img width="589" alt="Screen Shot 2022-05-11 at 11 18 19 AM" src="https://user-images.githubusercontent.com/89223547/167919033-b7705533-6b8a-431a-a76b-27a19749e505.png">
+<img width="591" alt="Screen Shot 2022-05-11 at 11 18 24 AM" src="https://user-images.githubusercontent.com/89223547/167919046-4db16b4c-5f2a-4bc9-810d-cc6b3b1b1bf6.png">
+<img width="608" alt="Screen Shot 2022-05-11 at 11 18 30 AM" src="https://user-images.githubusercontent.com/89223547/167919054-5323df43-f7eb-4652-ad74-a3cfc584963e.png">
+<img width="604" alt="Screen Shot 2022-05-11 at 11 18 36 AM" src="https://user-images.githubusercontent.com/89223547/167919063-55e5cfe7-ab86-4082-9e67-32c0f8e8141a.png">
