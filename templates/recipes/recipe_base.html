@@ -5,5 +5,19 @@
 {% endblock %}
 
 {% block body %}
+<style>
+    .center {
+        margin: auto;
+    }
+</style>
 <p style="color:Tomato; font-size:300%; text-align: center;"><b>MAKE A RECIPE</b></p>
+
+<div class="center" style="background-color: #ff6347; width: 500px; height: 200px;">
+
+    <form action="/action_page.php" style="text-align: center; padding-top: 75px">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+    </form>
+</div>
+
 {% endblock %}
