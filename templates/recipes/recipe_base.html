@@ -25,11 +25,20 @@
 
     .button:hover {opacity: 1}
 
+    body {
+        background-image: url('https://github.com/SlimeyTurtles/jinjaturtles/blob/main/static/makeRecipe_background.png?raw=true');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+
 </style>
 
-<p style="color:Tomato; font-size:300%; text-align: center; "><b>MAKE A RECIPE</b></p>
 
-<div class="center" style="background-color: #ff6347; width: 500px; height: 100px;">
+<p style="color:#ff6347; font-size:300%; text-align: center; text-decoration: underline overline #ff8cs7d;"><b>MAKE A RECIPE</b></p>
+
+<div class="center" style="background-color: #ff6347; width: 500px; height: 100px; opacity: 0.9;">
 
     <form action="/action_page.php" style="text-align: center; padding-top: 4%">
         <input type="file" id="myFile" name="filename">
@@ -38,8 +47,8 @@
 
 </div>
 
-<div class="center" style="background-color: #ff6347; width: 900px; height: 350px; margin-top: 5%">
-
+<div class="center" style="background-color: #ff6347; width: 900px; height: 400px; margin-top: 5%; opacity: 0.9;">
+    <p style="color: #ffd8d8; padding-top: 15px; margin-left: 2%; font-size:120%"><b>HOW TO MAKE IT</b></p>
     <form action="/action_page.php">
         <textarea rows="10" cols="100" style="margin-top: 2%; margin-left: 2%" >
         </textarea>
