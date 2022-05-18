@@ -13,6 +13,10 @@ def index():
 def contact():
     return render_template("contact.html")
 
+@app.route('/schedule/')
+def schedule():
+    return render_template("schedule.html")
+
 @app.route('/login/')
 def login():
     return render_template("login/login.html")
