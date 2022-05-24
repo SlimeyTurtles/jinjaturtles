@@ -27,6 +27,10 @@ def login():
 def recipetemp():
     return render_template("recipes/recipe_base.html")
 
+@app.route('/faq/')
+def faq():
+    return render_template("faq.html")
+
 # run code
 
 @app.route('/signup/')
