@@ -30,6 +30,10 @@ def recipetemp():
 def faq():
     return render_template("faq.html")
 
+@app.route('/feedback/')
+def feedback():
+    return render_template("feedback.html")
+
 # run code
 
 @app.route('/signup/')

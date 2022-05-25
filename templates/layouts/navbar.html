@@ -21,7 +21,17 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <a class="nav-link" href='/schedule/'>Schedule</a>
             <a class="nav-link" href='/login/'>Login temp</a>
             <a class="nav-link" href='/signup/'>Sign Up</a>
-            <a class="nav-link" href='/faq/'>FAQ</a>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
+                    Learn More
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <a class="dropdown-item" href="/faq">FAQ</a>
+                    <a class="dropdown-item" href="/feedback">Feedback</a>
+                </div>
+            </li>
+
                 <!-- Search Box -->
                 <div class="px-3">
                     <input id="search" type="search" placeholder="Search" aria-label="Search">
@@ -31,6 +41,8 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                     <span id="clock"></span>
                 </div>
             </div>
+
+
 
             {% block navbar_script %}
             <!-- Navigation bar JavaScript support -->
