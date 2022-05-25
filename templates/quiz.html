@@ -1,0 +1,81 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <title>JS Quiz template</title>
+
+</head>
+
+<body>
+<div align="center">
+    <h3>Quiz Trial</h3>
+</div>
+
+What does RAM stand for?<br>
+1. Random Arithmetic Maths<br>
+2. Random Access Memory<br>
+3. Regional Accounting Money<br>
+Answer 1:
+<input id="RAM" type="number" size="4" min="1" max="3"><br><br>
+What does ADC stand for?<br>
+1. Asynchronous DialUp Call<br>
+2. Active Database Chip<br>
+3. Analog to Digital Converter<br>
+Answer 2:
+<input id="ADC" type="number" size="4" min="1" max="3"><br><br>
+What does AGP stand for?<br>
+1. Active Graphics Pointer<br>
+2. Accelerated Graphics Port<br>
+3. Analog Gateway Protocol<br>
+Answer 3:
+<input id="AGP" type="number" size="4" min="1" max="3"><br><br>
+What does Laser stand for?<br>
+1. Light and sound emitting range <br>
+2. Light Amplification by Stimulated Emission of Radiation.<br>
+3. Lightening around lithosphere enchanted road <br>
+Answer 4:
+<input id="LAS" type="number" size="4" min="1" max="3"><br><br>
+What does CPU stand for?<br>
+1. Central Processing Unit<br>
+2. Control Primary Unit<br>
+3. Central Personal Unit<br>
+Answer 5:
+<input id="CPU" type="number" size="4" ><br><br>
+<button type="button" onClick="QuizFunction()">Test your answers</button>
+<br>
+<p id="pstyle">Number of correct answers</p>
+
+<script>
+
+    function QuizFunction() {
+        var ans1 = document.getElementById('RAM').value;
+        ans2 = document.getElementById('ADC').value;
+        ans3 = document.getElementById('AGP').value;
+        ans4 = document.getElementById('LAS').value;
+        ans5 = document.getElementById('CPU').value;
+        score = 0
+        if(ans1= 2){var score=score++;
+            document.getElementById('pstyle').innerHTML = score+'/5';
+        } else {
+            document.getElementById('pstyle').innerHTML  score+'/5';
+        }
+    }
+
+</script>
+
+</body>
+
+</head>
+<body>
+
+</body>
+</html>
+    {% endblock %}
