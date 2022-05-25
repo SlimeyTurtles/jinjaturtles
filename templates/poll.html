@@ -1,0 +1,147 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+<title>Poll</title>
+{% endblock %}
+
+{% block body %}
+<style>
+    /* 8:39  */
+    * {
+        margin:0px;
+        padding:0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Roboto";
+        background: #fa9f90;
+    }
+
+    .poll {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width:400px;
+        background: #ff6347;
+        border-radius:10px;
+        box-shadow: 0px 0px 20px 5px rgba(35, 30, 128, 0.05);
+    }
+
+    .poll .question {
+        padding:20px;
+        color: #111;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .poll .answers {
+        padding:20px 20px 10px;
+    }
+
+    .poll .answers .answer {
+        position:relative;
+        width: 100%;
+        height: 400px;
+        padding: 0px 10px;
+        line-height: 40px;
+        color: #111;
+        margin-bottom: 10px;
+        border: 1px solid #d4d4d4;
+        border-radius: 10px;
+        cursor: pointer;
+        overflow: hidden;
+
+
+    }
+
+    .poll .answers .answer.selected{
+        border: 2px solid #f4511e;
+    }
+
+    .poll .answers .answer .span.percentage-value {
+
+    }
+
+</style>
+
+
+<div class="poll">
+    <div class="question"></div>
+    <div class="answers"></div>
+</div>
+
+<script>
+    let poll = {
+        //questions and answers
+        question: ["What should we make next week"],
+        answers: ["Food 1", "Food 2", "Food 3", "Food 4"],
+
+        //20 responses, determines weighted percentage for each option
+        pollCount:20,
+        answersWeight: [4, 4, 2, 10],
+        selectedAnswer: -1
+    };
+
+    //Document Object Model (DOM)
+    let pollDOM = {
+        //querySelector returns the first element within the document that matches the specified selector
+        //picks question from poll
+        question:document.querySelector(".poll .question"),
+        //picks answers from poll
+        answers:document.querySelector(".poll .answers")
+    }
+
+    //innterText represents the rendered text content of a node
+    //returns the text content of pollDOM above ^
+    pollDOM.question.innerText = poll.question;
+    //$ is an identifier
+    //percentages
+    pollDOM.answers.innterHTML = poll.answers.map(function(answer,i){
+        return (
+            `
+                <div class="answer" onclick="markAnswer('${i}')">
+                    ${answer}
+                    <span class="percentage-bar"></span>
+                    <span class="percentage-value"></span>
+                </div>
+            `
+        );
+    }).join("");
+
+    //function that determines what answer you marked
+    function markAnswer(i){
+        poll.selectedAnswer = +i;
+        try {
+            document.querySelector(".poll .answers. answer.selected").classList.remove("selected");
+        } catch(msg){}
+        document.querySelectorAll(".poll .answers. answer")[+i].classList.add("selected");
+        showResults();
+    }
+
+    //function that
+    function showResults(){
+        let answers = document.querySelectorAll(".poll .answers .answer");
+        for (let i=0; i<answers.length;i++){
+            let percentage = 0;
+            if (i == poll.selectedAnswer){
+                //returns the value of the number rounded to nearest integer
+                percentage = Math.round(
+                    (poll.answersWeight[i]+1) * 100 / (poll.pollCount+1)
+                );
+            }
+            else {
+                percentage = Math.round(
+                    (poll.answersWeight[i]) * 100 / (poll.pollCount+1)
+                );
+            }
+
+            answers[i].querySelector(".percentage.bar").style.width = percentage + "%";
+            answers[i].querySelector(".percentage.value").innterText = percentage + "%";
+        }
+    }
+
+
+</script>
+{% endblock %}
