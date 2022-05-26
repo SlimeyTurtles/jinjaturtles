@@ -1,0 +1,65 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <title>Upload Your Creations!</title>
+{% endblock %}
+
+{% block body %}
+    <style>
+        .center {
+            margin: auto;
+        }
+
+        .button {
+            background-color: #f4511e;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .button:hover {opacity: 1}
+
+        body {
+            background-color: #FFD580;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+
+    </style>
+
+
+    <p style="color:#ff6347; font-size:300%; text-align: center; text-decoration: underline overline #f8a79a;"><b>Photo Gallery</b></p>
+
+    <div class="center" style="background-color: #ff6347; width: 500px; height: 100px; opacity: 0.9;">
+
+        <form action="/action_page.php" style="text-align: center; padding-top: 4%">
+            <input type="file" id="myFile" name="filename">
+            <input type="submit" class="button">
+        </form>
+
+    </div>
+
+    <div class="center" style="background-color: #ff6347; width: 900px; height: 400px; margin-top: 5%; opacity: 0.9;">
+        <p style="color: #ffd8d8; padding-top: 15px; margin-left: 2%; font-size:120%"><b>Add a Caption</b></p>
+        <form action="/action_page.php">
+        <textarea rows="10" cols="100" style="margin-top: 2%; margin-left: 2%" >
+        </textarea>
+            <input type="submit" class="button" style="margin-left: 2%">
+        </form>
+
+    </div>
+
+    <img src="/static/cookingclub1.JPEG" alt="cookingclub1" height="300" width="300">
+    <img src="/static/cookingclub2.JPG" alt="cookingclub2" height="300" width="300">
+    <img src="/static/cookingclub3.PNG" alt="cookingclub3" height="300" width="300">
+    <img src="/static/cookingclub4.PNG" alt="cookingclub4" height="300" width="300">
+
+{% endblock %}
