@@ -1,4 +1,9 @@
-from flask import render_template, Flask
+
+from flask import Flask, render_template
+from flask import request
+
+
+
 
 app = Flask(__name__)
 
@@ -7,6 +12,10 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     return render_template("index.html")
+
+@app.route('/test/')
+def test():
+    return render_template("test.html")
 
 @app.route('/contact/')
 def contact():
@@ -30,8 +39,13 @@ def recipetemp():
 def faq():
     return render_template("faq.html")
 
-@app.route('/feedback/')
+@app.route('/feedback/', methods=['GET', 'POST'])
 def feedback():
+    if request.form:
+        input = request.form.get("feed1")
+        name = request.form.get("feed2")
+        if len(input) != 0:  # input field has content
+            return render_template("feedback.html", input=input, name=name)
     return render_template("feedback.html")
 
 # run code
