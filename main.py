@@ -35,6 +35,10 @@ def login():
 def recipetemp():
     return render_template("recipes/recipe_base.html")
 
+@app.route('/quiz/')
+def quiz():
+    return render_template("quiz.html")
+
 @app.route('/faq/')
 def faq():
     return render_template("faq.html")

@@ -1,0 +1,81 @@
+{% extends "layouts/base.html" %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <title>JS Quiz template</title>
+
+</head>
+
+<body>
+<div align="center">
+    <h3>Quiz </h3>
+</div>
+
+What can you replace milk with?<br>
+1. Eggs with cornstarch<br>
+2. heavy cream thinned with water<br>
+3. white wine with flour<br>
+Answer 1:
+<input id="RAM" type="number" size="4" min="1" max="3"><br><br>
+What can you replace olive oil with?<br>
+1. Coconut oil<br>
+2. Hair oil<br>
+3. Pasta Sauce<br>
+Answer 2:
+<input id="ADC" type="number" size="4" min="1" max="3"><br><br>
+What can you replace flour with?<br>
+1. Baking soda<br>
+2. Chickpea flour<br>
+3. Bead crumbs<br>
+Answer 3:
+<input id="AGP" type="number" size="4" min="1" max="3"><br><br>
+What can you replace eggs with?<br>
+1. Apple sauce <br>
+2. Milk <br>
+3. Vanilla extract <br>
+Answer 4:
+<input id="LAS" type="number" size="4" min="1" max="3"><br><br>
+What can you replace baking soda with??<br>
+1. Flour<br>
+2. Poweder sugar<br>
+3. Baker's ammonia<br>
+Answer 5:
+<input id="CPU" type="number" size="4" ><br><br>
+<button type="button" onClick="QuizFunction()">Test your answers</button>
+<br>
+<p id="pstyle">Number of correct answers</p>
+
+<script>
+
+    function QuizFunction() {
+        var ans1 = document.getElementById('RAM').value;
+        ans2 = document.getElementById('ADC').value;
+        ans3 = document.getElementById('AGP').value;
+        ans4 = document.getElementById('LAS').value;
+        ans5 = document.getElementById('CPU').value;
+        score = 0
+        if(ans1= 2){var score=score++;
+            document.getElementById('pstyle').innerHTML = score+'/5';
+        } else {
+            document.getElementById('pstyle').innerHTML  score+'/5';
+        }
+    }
+
+</script>
+
+</body>
+
+</head>
+<body>
+
+</body>
+</html>
+    {% endblock %}
