@@ -7,7 +7,7 @@
 <div class="product" style="margin-top: 2%;">
     <div class="row" style="padding: 15%; padding-top: 0%; padding-bottom: 5%;">
 
-        <h1><mark style="background-color: #f4511e">DNHS Cooking Club</mark></h1>
+        <h1> DNHS Cooking Club </h1>
 
         <style>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -35,6 +35,18 @@
 
         <br>
         <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="container" style="position: center">
+            <div class="row justify-content-center margins-autos">
+                <div id="n1" class="vImage col-sm"><img src="/static/cookingclub1.JPEG" width="300" height="300"></div>
+                <div id="n2" class="vImage col-sm"><img src="/static/cookingclub2.JPG" width="300" height="300"></div>
+                <div id="n3" class="vImage col-sm"><img src="/static/cookingclub3.PNG" width="300" height="300"></div>
+                <div id="n4" class="vImage col-sm"><img src="/static/cookingclub4.PNG" width="300" height="300"></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -49,7 +61,7 @@
 
             /* Slideshow container */
             .slideshow-container {
-                max-width: 400px;
+                max-width: 1000px;
                 position: relative;
                 margin: auto;
             }
@@ -62,10 +74,10 @@
                 width: auto;
                 padding: 16px;
                 margin-top: -22px;
-                color: #FFD580;
+                color: white;
                 font-weight: bold;
                 font-size: 18px;
-                transition: 10s ease;
+                transition: 0.6s ease;
                 border-radius: 0 3px 3px 0;
                 user-select: none;
             }
@@ -120,16 +132,16 @@
             /* Fading animation */
             .fade {
                 animation-name: fade;
-                animation-duration: 4000s;
+                animation-duration: 1.5s;
             }
 
             @keyframes fade {
-                from {opacity: .9}
+                from {opacity: .4}
                 to {opacity: 1}
             }
 
             /* On smaller screens, decrease text size */
-            @media only screen and (max-width: 400px) {
+            @media only screen and (max-width: 300px) {
                 .prev, .next,.text {font-size: 11px}
             }
         </style>
@@ -199,7 +211,5 @@
 
     </body>
     </html>
-
-    <a> Follow us on Instagram <a href="https://www.instagram.com/dnhscookingclub">@dnhscookingclub</a></a>
 
 {% endblock %}
