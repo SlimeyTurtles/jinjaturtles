@@ -49,24 +49,34 @@ What can you replace baking soda with??<br>
 3. Baker's ammonia<br>
 Answer 5:
 <input id="CPU" type="number" size="4" ><br><br>
-<button type="button" onClick="QuizFunction()">Test your answers</button>
+<button type="button" onclick="quizFunction()">Test your answers</button>
 <br>
 <p id="pstyle">Number of correct answers</p>
 
 <script>
-
-    function QuizFunction() {
-        var ans1 = document.getElementById('RAM').value;
+    // define variables outside function
+    var ans1
+    let ans2
+    let ans3
+    let ans4
+    let ans5
+    let list = []
+    function quizFunction() {
+        // checking if input is correct
+        ans1 = document.getElementById('RAM').value;
         ans2 = document.getElementById('ADC').value;
         ans3 = document.getElementById('AGP').value;
         ans4 = document.getElementById('LAS').value;
         ans5 = document.getElementById('CPU').value;
         score = 0
-        if(ans1= 2){var score=score++;
-            document.getElementById('pstyle').innerHTML = score+'/5';
-        } else {
-            document.getElementById('pstyle').innerHTML  score+'/5';
+        list = [ans1, ans2, ans3, ans4, ans5]
+        // its doing string now, need to change to integer
+        for (let i = 0; i < list.length; i++) {
+            if (list[i] === 2) {
+                score = score + 1
+            }
         }
+        document.getElementById('pstyle').innerHTML = "Number of correct answers" + score
     }
 
 </script>
