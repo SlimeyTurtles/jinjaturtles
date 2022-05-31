@@ -5,13 +5,22 @@
 {% endblock %}
 
 {% block body %}
+<script type="text/javascript">
+    (function(d,s,id,u){
+        if (d.getElementById(id)) return;
+        var js, sjs = d.getElementsByTagName(s)[0],
+            t = Math.floor(new Date().getTime() / 1000000);
+        js=d.createElement(s); js.id=id; js.async=1; js.src=u+'?'+t;
+        sjs.parentNode.insertBefore(js, sjs);
+    }(document, 'script', 'os-widget-jssdk', 'https://www.opinionstage.com/assets/loader.js'));
+</script><div id="os-widget-1011722" class="os_poll" data-path="/polls/2844808" data-of="calissa-tyrrell" data-opinionstage-widget="a033da94-1977-4c35-a484-6a1359c23b57"></div>
+
+{% endblock %}
+
+
+<!--
+
 <style>
-    /* 8:39  */
-    * {
-        margin:0px;
-        padding:0px;
-        box-sizing: border-box;
-    }
 
     body {
         font-family: "Roboto";
@@ -52,22 +61,36 @@
         border-radius: 10px;
         cursor: pointer;
         overflow: hidden;
-
-
     }
 
     .poll .answers .answer.selected{
         border: 2px solid #f4511e;
     }
 
-    .poll .answers .answer .span.percentage-value {
+    .poll .answers .answer span.percentage-value {
+        position:absolute;
+        top: 50%;
+        right: 0px;
+        width: 40px;
+        transform: translateY(-50%);
+        color: #111;
+        font-size: 15px;
+    }
 
+    .poll .answers .answer span.percentage-bar {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+        background: #ccd8f1;
+        z-index: -1;
+        transition: width 300ms ease-in-out;
     }
 
 </style>
 
-
-<div class="poll">
+<div class="poll" onload="script()">
     <div class="question"></div>
     <div class="answers"></div>
 </div>
@@ -75,7 +98,7 @@
 <script>
     let poll = {
         //questions and answers
-        question: ["What should we make next week"],
+        question: "What should we make next week?",
         answers: ["Food 1", "Food 2", "Food 3", "Food 4"],
 
         //20 responses, determines weighted percentage for each option
@@ -116,7 +139,7 @@
         try {
             document.querySelector(".poll .answers. answer.selected").classList.remove("selected");
         } catch(msg){}
-        document.querySelectorAll(".poll .answers. answer")[+i].classList.add("selected");
+        document.querySelectorAll(".poll .answers .answer")[+i].classList.add("selected");
         showResults();
     }
 
@@ -144,4 +167,6 @@
 
 
 </script>
-{% endblock %}
+
+
+-->
