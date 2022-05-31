@@ -61,6 +61,29 @@ def crud_authorize():
     # show the auth user page if the above fails for some reason
     return render_template("authorize.html")
 
+@app.route('templates/recipes/recipe.html', methods=["GET", "POST"])
+def recipes():
+    # obtains form inputs and fulfills login requirements
+    if request.form:
+        recipe = request.form.get("recipe")
+        recipeImage = request.form.get("recipeImage")
+        if login(email, password):       # zero index [0] used as email is a tuple
+            return redirect(url_for('crud.crud'))
+
+    # if not logged in, show the login page
+    return render_template("login.html")
+  
+@app.route('templates/feedback.html', methods=["GET", "POST"])
+def feedback():
+    # obtains form inputs and fulfills login requirements
+    if request.form:
+        recipe = request.form.get("recipe")
+        recipeImage = request.form.get("recipeImage")
+        if login(email, password):       # zero index [0] used as email is a tuple
+            return redirect(url_for('crud.crud'))
+
+    # if not logged in, show the login page
+    return render_template("login.html")
 
 # CRUD create/add
 @app_crud.route('/create/', methods=["POST"])
