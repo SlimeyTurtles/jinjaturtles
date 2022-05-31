@@ -3,15 +3,8 @@ from __init__ import db
 from sqlalchemy.exc import IntegrityError
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import UserMixin
+import CRUD_methods
 
-
-# Tutorial: https://www.sqlalchemy.org/library.html#tutorials, try to get into Python shell and follow along
-
-# Define the Users table within the model
-# -- Object Relational Mapping (ORM) is the key concept of SQLAlchemy
-# -- a.) db.Model is like an inner layer of the onion in ORM
-# -- b.) Users represents data we want to store, something that is built on db.Model
-# -- c.) SQLAlchemy ORM is layer on top of SQLAlchemy Core, then SQLAlchemy engine, SQL
 class Users(UserMixin, db.Model):
     # define the Users schema
     userID = db.Column(db.Integer, primary_key=True)
@@ -26,50 +19,22 @@ class Users(UserMixin, db.Model):
         self.email = email
         self.set_password(password)
         self.phone = phone
-
-    # CRUD create/add a new record to the table
-    # returns self or None on error
+        
+        crud = CRUD(['name': name, 'email': email, 'password': password, 'phone': phone])
+          
     def create(self):
-        try:
-            # creates a person object from Users(db.Model) class, passes initializers
-            db.session.add(self)  # add prepares to persist person object to Users table
-            db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
-            return self
-        except IntegrityError:
-            db.session.remove()
-            return None
+        crud.create(self)
 
-    # CRUD read converts self to dictionary
-    # returns dictionary
     def read(self):
-        return {
-            "userID": self.userID,
-            "name": self.name,
-            "email": self.email,
-            "password": self.password,
-            "phone": self.phone,
-            "query": "by_alc"  # This is for fun, a little watermark
-        }
+        crud.read(self)
 
-    # CRUD update: updates users name, password, phone
-    # returns self
     def update(self, name, password="", phone=""):
-        """only updates values with length"""
-        if len(name) > 0:
-            self.name = name
-        if len(password) > 0:
-            self.set_password(password)
-        if len(phone) > 0:
-            self.phone = phone
-        db.session.commit()
-        return self
+        password = set_password(password)
+        newDict = ['name': name, 'email': self.email, 'password': password, 'phone': phone]
+        return crud.update(self, newDict)
 
-    # CRUD delete: remove self
-    # None
     def delete(self):
-        db.session.delete(self)
-        db.session.commit()
-        return None
+        return crud.delete(self)
 
     # set password method is used to create encrypted password
     def set_password(self, password):

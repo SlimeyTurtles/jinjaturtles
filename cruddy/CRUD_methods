@@ -1,0 +1,30 @@
+Class CRUD:
+  self.elements = []
+  
+  def __init__(self, elementsDict):
+    self.dict = elementsDict
+  
+  def create(self):
+          try:
+            # creates a person object from Users(db.Model) class, passes initializers
+            db.session.add(self)  # add prepares to persist person object to Users table
+            db.session.commit()  # SqlAlchemy "unit of work pattern" requires a manual commit
+            return self
+        except IntegrityError:
+            db.session.remove()
+            return None
+            
+  def read(self):
+        return self.dict
+        
+  def update(self, newDict):
+    for i in range(self.dict):
+      if newDict[i] > 0:
+        self.dict[i] = newDict[i]
+    db.session.commit()
+    return self
+  
+  def delete(self):
+    db.session.delete(self)
+    db.session.commit()
+    return None
