@@ -65,7 +65,7 @@
                         <div>
                             <label>Please let us know how you are enjoying your time in the club! We love to hear your input!</label>
                         </div>
-                        <textarea rows="6" cols="80" name="feed1" id="feed1"></textarea>
+                        <textarea rows="6" cols="90" name="feed1" id="feed1"></textarea>
                         <input type="submit" name="feedbut" value="Post Feedback">
                         <input type="button" value="Delete Most Recent" onclick="pop()">
                         <input type="button" value="Clear All" onclick="remove()">
@@ -76,7 +76,7 @@
                     <p hidden id="previous">
                         <br>
                         <mark>Previous Responses</mark><br></p><!--this becomes unhidden when text is added-->
-                    <!--<li>-->     <p id="change" style="color:black";>{% if input | length != 0 %} {{ name }} : {{ input }} {% else %}<br><mark>Previous Responses</mark><br>{% endif %}</p><!--</li>--><!--this contains only the local storage without the new text-->
+                    <!--<li>-->     <p id="change" style="color:orangered";>{% if input | length != 0 %} {{ name }} : {{ input }} {% else %}<br><mark>Previous Responses</mark><br>{% endif %}</p><!--</li>--><!--this contains only the local storage without the new text-->
                     <!--</ul>-->
 
                 </div>
