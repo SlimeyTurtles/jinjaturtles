@@ -4,46 +4,7 @@
 {% endblock %}
 
 {% block body %}
-<div class="product" style="margin-top: 2%;">
-    <div class="row" style="padding: 15%; padding-top: 0%; padding-bottom: 5%;">
-
-        <h1> DNHS Cooking Club </h1>
-
-        <style>
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-                                                                                                                                                                                                                              .margins-autos {}
-            .vLink {
-                margin-bottom: 5px;
-            }
-            .vImage {
-                margin-bottom: 2rem;
-            }
-            #vMap {
-                margin-bottom: 12rem;
-            }
-        </style>
-        <body style="background-color:#FFD580;">
-
-        <div style="position: center; font-size:x-large; color:green; font-family: 'Apple Chancery'; padding-right:20%" >
-            <br>
-            <p>About:</p>
-        </div>
-
-        <div style="position: center;font-size:large; color:black; font-family: 'Century Schoolbook';  " >
-            <p>Learn how to make some of the best recipes from our own Del Norte Chefs!</p>
-        </div>
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-</div>
-
-    <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             * {box-sizing: border-box}
             body {font-family: Verdana, sans-serif; margin:0}
@@ -136,40 +97,62 @@
                 .prev, .next,.text {font-size: 11px}
             }
         </style>
-    </head>
-    <body>
+<table>
+    <th>
+        <div class="product" style="margin-top: 2%;">
+            <div class="row" style="padding: 15%; padding-top: 0%; padding-bottom: 5%;">
 
-    <div class="slideshow-container">
+                <h1> DNHS Cooking Club </h1>
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="/static/cookingclub1.JPEG" style="width:100%">
-            <div class="text">Pasta Dough Hearts</div>
+                <body style="background-color:#ff8d59;">
+
+                <div style="position: center; font-size:x-large; color:#fa5131; font-family: 'Apple Chancery'; padding-right:20%" >
+                    <br>
+                    <p>About:</p>
+                </div>
+
+                <div style="position: center;font-size:large; color:black; font-family: 'Century Schoolbook';  " >
+                    <p>Learn how to make some of the best recipes from our own Del Norte Chefs!</p>
+                    <a> Follow us on Instagram <a href="https://www.instagram.com/dnhscookingclub">@dnhscookingclub</a></a>
+                </div>
+
+            </div>
         </div>
+    </th>
+    <th style="padding: 100px">
+        <div class="slideshow-container">
 
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="/static/cookingclub2.JPG" style="width:100%">
-            <div class="text">Caption Two</div>
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="/static/cookingclub1.JPEG" style="width:100%">
+                <div class="text">Pasta Dough Hearts</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="/static/cookingclub2.JPG" style="width:100%">
+                <div class="text">Making Noodles</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="/static/cookingclub3.PNG" style="width:100%">
+                <div class="text">Wisking is better with friends</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
         </div>
+        <br>
 
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="/static/cookingclub3.PNG" style="width:100%">
-            <div class="text">Caption Three</div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-    </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+    </th>
+</table>
 
     <script>
         let slideIndex = 1;
@@ -201,8 +184,4 @@
     </script>
 
     </body>
-    </html>
-
-    <a> Follow us on Instagram <a href="https://www.instagram.com/dnhscookingclub">@dnhscookingclub</a></a>
-
 {% endblock %}
