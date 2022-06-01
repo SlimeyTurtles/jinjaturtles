@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 {% extends "layouts/base.html" %}
 
 {% block body %}
@@ -44,7 +43,7 @@
 
 
         .container {
-            padding: 16px;
+            padding: 10px;
         }
 
 
@@ -56,22 +55,22 @@
     </style>
 
     <!-- The sign-up form on the site is linked to this specific google form-->
-    <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSc6k_EE5PaHA1s6zoxa_AoBviz8KMO4NN8JZ3Xml3j6N1JaLQ/formResponse" style="border:1px solid #ccc">
-        <div class="container">
+    <form action="https://docs.google.com/forms/u/3/d/e/1FAIpQLSc6k_EE5PaHA1s6zoxa_AoBviz8KMO4NN8JZ3Xml3j6N1JaLQ/formResponse" method="post">
+        <div class="container" style="border:1px solid #ccc">
             <h1>SIGN UP to be apart of the Cooking Club!</h1> <!--The different questions being asked for the form, each name correlates to the answering portion in linked google form -->
             <p>Want to be able to make delicious food created by your peers? Sign up now!</p>
             <hr>
             <label for="name"><b>Full Name</b></label>
-            <input type="text" placeholder="First and last name" name="entry.1564829526" jsname="YPqjbf" required>
+            <input type="text" placeholder="First and last name" name="entry.174360141" jsname="YPqjbf" required>
 
             <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="entry.1685589982" jsname="YPqjbf" required>
+            <input type="text" placeholder="Enter Email" name="entry.832146258" jsname="YPqjbf" required>
 
             <label for="number"><b>Phone Number</b></label>
-            <input type="text" placeholder="Phone number" name="entry.592319792" jsname="YPqjbf" required>
+            <input type="text" placeholder="Phone number" name="entry.663322550" jsname="YPqjbf" required>
 
             <label for="qcc"><b>Questions/Comments/Concerns?</b></label>
-            <input type="text" placeholder="Type here" name="entry.80120306" jsname="YPqjbf" required>
+            <input type="text" placeholder="Type here" name="entry.1005075430" jsname="YPqjbf" required>
 
             <button type="submit" class="signupbtn">Sign Up</button> <!--Submit button, once submitted a Google Form confirmation page will show up-->
         </div>
@@ -79,3 +78,4 @@
     </form>
 
 {% endblock %}
+
