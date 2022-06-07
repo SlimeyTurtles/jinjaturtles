@@ -16,11 +16,10 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
             <!-- url_for is a Jinja2 pre-processor that finds route from function name (def) -->
             <a class="nav-link" href='/recipe-temp/'>Recipes</a>
             <a class="nav-link" href='/poll/'>Poll</a>
+            <a class="nav-link" href='/gallery/'>Gallery</a>
             <a class="nav-link" href='/contact/'>Contact Us</a>
             <a class="nav-link" href='/schedule/'>Schedule</a>
-            <a class="nav-link" href='/login/'>Login temp</a>
-            <a class="nav-link" href='/signup/'>Sign Up</a>
-            <a class="nav-link" href='/quiz/'>QUIZ</a>
+            <a class="nav-link" href='/login/'>Login</a>
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton1" type="button">
@@ -41,6 +40,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <a class="dropdown-item" href="/faq">FAQ</a>
                     <a class="dropdown-item" href="/feedback">Feedback</a>
+                    <a class="dropdown-item" href='/quiz/'>Quiz</a>
 
                 </div>
             </li>
@@ -70,7 +70,7 @@ This HTML is setup as a fragment allowing it to be "included" by other HTML file
                 // open google search window
                 const search = document.getElementById('search');
                 const google = 'https://www.google.com/search?q=site%3A+';
-                const site = 'https://delp.rocks';
+                const site = 'https://cookingclub.tech';
 
                 function submitted(event) {
                     if (event.key === 'Enter') {
